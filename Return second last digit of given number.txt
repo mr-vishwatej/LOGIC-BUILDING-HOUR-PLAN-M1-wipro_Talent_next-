@@ -1,0 +1,4 @@
+ int t=Math.abs(input1);
+       if(t<9) return -1;
+        int n=t%100;
+        return n/10;

@@ -1,0 +1,7 @@
+int s=1;;
+        while(input1!=1)
+        {
+                s=s*input1;
+                input1--;
+        }
+        return s;

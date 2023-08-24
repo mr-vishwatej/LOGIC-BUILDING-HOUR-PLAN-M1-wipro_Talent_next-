@@ -1,0 +1,11 @@
+ long pre=0;
+        long crt=1;
+        long nxt=0;
+        for(int i=1;i<input1-1;i++)
+        {
+            nxt=pre+crt;
+            pre=crt;
+            crt=nxt;
+        }
+    if (input1==2) return 1;
+        return nxt;

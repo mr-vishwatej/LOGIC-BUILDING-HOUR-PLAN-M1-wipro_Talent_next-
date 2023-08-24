@@ -1,0 +1,44 @@
+ String str=input1.toUpperCase();
+        int s=0;
+        if(input2==0)
+        {
+            for(int i=0;i<str.length();i++)
+            {
+                char ch=str.charAt(i);
+                int asci=(int)ch;
+                if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+                {
+                    continue;
+                }
+                else if(asci<=64||asci>=91)
+                {
+                     continue;
+                }
+                else
+                {
+                    s=s+asci-64;
+                }
+            }
+
+        }
+        else
+        {
+                for(int i=0;i<str.length();i++)
+            {
+                char ch=str.charAt(i);
+                int asci=(int)ch;
+                
+             if(asci<=64||asci>=91)
+                {
+                     continue;
+                }
+                else
+                {
+                    s=s+asci-64;
+                }
+            }
+
+
+
+        }
+        return s;

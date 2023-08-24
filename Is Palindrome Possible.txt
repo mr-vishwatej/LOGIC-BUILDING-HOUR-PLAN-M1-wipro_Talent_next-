@@ -1,0 +1,15 @@
+ HashMap <Integer,Integer> mp=new HashMap<>();
+        int cnt=0,r;
+        while(input1!=0)
+        {
+            r=input1%10;
+            if(mp.containsKey(r)) mp.put(r,mp.get(r)+1);
+            else mp.put(r, 1);
+            input1=input1/10;
+        }
+        for(int i:mp.keySet())
+        {
+            if(mp.get(i)==1) cnt++;
+        }
+        if(cnt<=1) return 2;
+        else return 1;

@@ -1,0 +1,20 @@
+int i=2;
+       int cnt=0;
+        while(true)
+        {
+            if(isprime(i))cnt++;
+            if(cnt==input1) return i;
+            i++;
+        }
+		//throw new UnsupportedOperationException("NthPrime(int input1)");
+	}
+    public boolean isprime(int n)
+    {
+        
+        for(int i=2;i<=n/2;i++)
+        {
+            if(n%i==0) return false;
+        }
+        return true;  
+
+    }

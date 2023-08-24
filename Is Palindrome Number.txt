@@ -1,0 +1,9 @@
+int t=input1,r,s=0;
+        while(input1!=0)
+        {
+            r=input1%10;
+            s=s*10+r;
+            input1=input1/10;
+        }
+        if(s==t) return 2;
+        else return 1;

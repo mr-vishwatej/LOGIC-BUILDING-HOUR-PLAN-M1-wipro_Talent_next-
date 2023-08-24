@@ -1,0 +1,3 @@
+int t1=Math.abs(input1);
+int t2=Math.abs(input2);
+return(t1%10+t2%10);

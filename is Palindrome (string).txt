@@ -1,0 +1,21 @@
+int ar[]=new int[input1.length()];
+        int top=0;
+        String str="";
+        for(int i=0;i<input1.length();i++)
+        {
+            char ch=input1.charAt(i);
+            ar[top]=ch;
+            top++;
+        }
+        for(int j=top-1;j>=0;j--)
+        {
+            str=str+(char)ar[j];
+        }
+        if(input1.equalsIgnoreCase(str))
+        {
+            return 2;
+        }
+        else
+        {
+            return 1;
+        }

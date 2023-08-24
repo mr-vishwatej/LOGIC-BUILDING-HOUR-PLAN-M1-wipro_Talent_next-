@@ -1,0 +1,32 @@
+       int n=0;
+        int min1=0,max1=0;
+        while(input1!=0)
+        {
+            int a=input1%10;
+            int b=input2%10;
+            int c=input3%10;
+             max1=Math.max(max1,Math.max(a,Math.max(b,c)));
+            min1=Math.min(a,Math.min(b,c));
+            n=n*10+min1;
+            input1=input1/10;
+            input2=input2/10;
+            input3=input3/10;
+        }
+        n=n*10+max1;
+        return rev(n);
+		//throw new UnsupportedOperationException("createPIN(int input1,int input2,int input3)");
+	}
+    int rev(int n)
+    {
+        int s=0,cnt=0;
+        while(n!=0)
+        {
+            int u=n%10;
+            s=s*10+u;
+            n=n/10;
+            cnt++;
+        }
+        if(cnt==3) return (s*10);
+        else if(cnt==2) return (s*100);
+        else return s;
+    }

@@ -1,0 +1,2 @@
+int t=Math.abs(input1);
+return t%10;

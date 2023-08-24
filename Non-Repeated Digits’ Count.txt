@@ -1,0 +1,16 @@
+int r;
+        int cnt=0;
+        HashMap<Integer,Integer> mp=new HashMap<>();
+        while(input1!=0)
+        {
+            r=input1%10;
+            if(mp.containsKey(r)) mp.put(r,mp.get(r)+1);
+            else mp.put(r,1);
+            input1=input1/10;
+        }
+        for(int i:mp.keySet())
+        {
+            if(mp.get(i)==1) cnt++;
+
+        }
+        return cnt;

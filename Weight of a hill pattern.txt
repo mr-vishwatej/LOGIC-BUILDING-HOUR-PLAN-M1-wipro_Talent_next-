@@ -1,0 +1,9 @@
+ int p=input2;
+        int s=p;
+        for(int i=2;i<=input1;i++)
+        {
+             p=p+input3;
+            s=s+p*i;
+
+        }
+        return s;

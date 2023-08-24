@@ -1,0 +1,7 @@
+int cnt=0;
+    if(input1%2!=0)  cnt++;
+    if(input2%2!=0)  cnt++;
+    if(input3%2!=0)  cnt++;
+    if(input4%2!=0)  cnt++;
+    if(input5%2!=0)  cnt++;
+    return cnt;

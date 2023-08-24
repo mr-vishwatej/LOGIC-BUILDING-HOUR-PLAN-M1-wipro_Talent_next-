@@ -1,0 +1,27 @@
+int s=0;
+        while(true)
+        {
+            s=sum(input1);
+            while(s>9||s<-9)
+            {
+                s=sum(s);
+            }
+
+            return s;
+            
+        }
+
+		//throw new UnsupportedOperationException("digitSum(int input1)");
+	}
+    int sum(int n)
+    {
+        int s=0,r;
+        while(n!=0)
+        {
+            r=n%10;
+            s=s+r;
+            n=n/10;
+
+        }
+        return s;
+    }

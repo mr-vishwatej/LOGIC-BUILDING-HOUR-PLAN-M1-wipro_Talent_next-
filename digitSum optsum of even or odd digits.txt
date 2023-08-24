@@ -1,0 +1,22 @@
+int r,s=0;
+        if(input2.equals("even"))
+        { 
+             while(input1!=0)
+        {
+            r=input1%10;
+            if(r%2==0) s=s+r;
+            input1=input1/10;
+        }
+            
+        }
+
+        else
+        {
+              while(input1!=0)
+        {
+            r=input1%10;
+            if(r%2!=0) s=s+r;
+            input1=input1/10;
+        }
+        }
+        return s;
